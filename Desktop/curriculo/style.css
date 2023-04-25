@@ -1,0 +1,105 @@
+﻿.parent {
+display: grid;
+grid-template-columns: 1fr 0.5fr repeat(4, 1fr) 0.5fr 1fr;
+grid-template-rows: repeat(10, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+
+}
+.about { grid-area: 1 / 1 / 11 / 3; 
+ background-color:#f5f5f5;
+ margin-top:60px;
+ border-right: 3px solid #FFDEAD;
+}
+
+.aboutme {
+    text-align: center;
+}
+.about h3 {
+    color:#060606;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-left: 60px;
+    
+   
+  
+}
+#perfil {
+    color:#000000;
+    margin-top: 120px;
+
+}
+
+#contato {
+    color:#000000;
+}
+
+.skills { 
+    grid-area: 1 / 7 / 11 / 9; 
+    background-color: #f5f5f5;
+    color:#000000;
+    margin-top:30px;
+    border-left: 3px solid #FFDEAD;
+    
+}
+
+.skills h3 {
+    color:#000000;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-left: 40px;
+    margin-top: 150px;
+    
+    
+}
+.middle h4 {
+    color:#5b5b5b;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.middle h5{
+    text-align: center;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.header { grid-area: 1 / 1 / 2 / 9; 
+ background-color: #FFDEAD;
+ 
+ /* width: 0;
+  height: 0; */
+  border-top: 80px solid transparent;
+  border-bottom: 80px solid transparent;
+  border-left: 130px solid #f5f5f5;
+  border-right: 130px solid #f5f5f5;
+  transform: rotate(360deg);}
+.middle { grid-area: 4 / 3 / 6 / 7; }
+/* .middle2 { grid-area: 7 / 3 / 10 / 7; } */
+
+.about h3, .skills h3 {
+  display: inline-block; /* Define o elemento h3 como um elemento de bloco de nível de linha */
+  border-bottom: 1px solid #b8b6b6;
+  width: auto; /* Define a largura da borda inferior como a largura do texto */
+  padding-bottom: 5px;
+  text-align: center;
+  line-height: 40px;
+  }
+
+
+  .imagem {
+    width: 200px; /* define a largura da imagem como 300 pixels */
+    height: 200px; /* define a altura da imagem como 200 pixels */
+    border-radius: 50%;
+    border: 20px solid #FFDEAD;
+    margin-left:30px;
+  }
